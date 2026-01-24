@@ -49,7 +49,7 @@ class AbydosCommand(StreamingCommand):
             if len(self.fieldnames) != 2:
                 raise ValueError("distance alogrithms take two fields as input")
 
-            func = getattr(cls, "dist")
+            func = getattr(cls, "dist_abs")
 
         elif self.module == "fingerprint":
             if len(self.fieldnames) != 1:
