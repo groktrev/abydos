@@ -21,7 +21,7 @@ Return the skeleton key string fingerprint of a single field value:
 
 `| abydos module=fingerprint algorithm=SkeletonKey field1`
 
-Return the Beider-Morse encordings of a single field value:
+Return the Beider-Morse encodings of a single field value:
 
 `| abydos module=phonetic algorithm=BeiderMorse field1`
 
