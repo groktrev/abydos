@@ -19,11 +19,12 @@ from AbydosWrapper import AbydosWrapper
 class AbydosCommand(StreamingCommand):
     module = Option(require=True)
     algorithm = Option(require=True)
+    nltk_tokenizer = Option(require=False)
 
     def stream(self, records):
         self.logger.debug("AbydosCommand: %s", self)
 
-        abydos = AbydosWrapper(self.module, self.algorithm, self.fieldnames)
+        abydos = AbydosWrapper(self.module, self.algorithm, self.nltk_tokenizer, self.fieldnames)
 
         for record in records:
             in_val = [record[key] for key in self.fieldnames]

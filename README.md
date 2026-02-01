@@ -2,6 +2,8 @@
 Copyright (c) 2026 Trevor Scroggins\
 Abydos Copyright (c) 2014-2020 Christopher C. Little\
 SyllabiPy Copyright (c) 2016 Alex Estes and Christopher Hench\
+Natural Language Toolkit (NLTK) Copyright (c) 2001-2025 NLTK Project\
+Punkt Tokenizer Models by Jan Strunk\
 Splunk Enterprise SDK for Python Copyright (c) 2011-2024 Splunk Inc.\
 Python for Scientific Computing Copyright (c) 2015-2019 Splunk Inc.
 ## Introduction
@@ -11,7 +13,9 @@ The `abydos` streaming search command provides access to the `abydos.distance`, 
 
 See the Abydos [documentation](https://abydos.readthedocs.io/) for available algorithms.
 
-`abydos.tokenizer.NLTKTokenizer`, `abydos.distance.NCDlzss`, and `abydos.distance.NCDpaq9a` are not implemented.
+Limited support for `abydos.tokenizer.NLTKTokenizer` NLTK tokenizers is available.
+
+`abydos.distance.NCDlzss`, and `abydos.distance.NCDpaq9a` are not implemented.
 ## Requirements
 Community App for Abydos requires a non-EOL version of Splunk Enterprise and Python for Scientific Computing:
 
@@ -39,3 +43,7 @@ Return the English stem of a single field value:
 Return the q-grams of a single field value:
 
 `| abydos module=tokenizer algorithm=QGrams field1`
+
+Return sentences using the NLTK Punkt Sentence Tokenizer:
+
+`| abydos module=tokenizer algorithm=NLTKTokenizer nltk_tokenizer=PunktSentenceTokenizer field1`

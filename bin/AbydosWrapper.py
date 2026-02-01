@@ -4,6 +4,13 @@
 # Copyright (c) 2026 Trevor Scroggins
 
 import importlib
+import os
+import sys
+
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "lib"))
+os.environ["NLTK_DATA"] = os.path.join(os.path.dirname(__file__), "..", "usr", "share", "nltk_data")
+
+import nltk
 
 class AbydosWrapper(object):
     _module_names = {
@@ -17,8 +24,9 @@ class AbydosWrapper(object):
 
     _module_name = None
     _algorithm = None
+    _nltk_tokenizer = None
 
-    def __init__(self, module_name=None, algorithm_name=None, fieldnames=None):
+    def __init__(self, module_name=None, algorithm_name=None, nltk_tokenizer_name=None, fieldnames=None):
         if module_name not in self._module_names:
             raise ValueError(f"{module_name} is not a supported module")
 
@@ -28,7 +36,14 @@ class AbydosWrapper(object):
         if not (hasattr(module, algorithm_name) and callable(getattr(module, algorithm_name))):
             raise ValueError(f"{algorithm_name} is not a valid alogrithm in {module_name}")
 
-        self._algorithm = getattr(module, algorithm_name)()
+        if algorithm_name != "NLTKTokenizer" and nltk_tokenizer_name is not None:
+            raise TypeError("nltk_tokenizer must be used with the NLTKTokenizer algorithm")
+
+        if algorithm_name == "NLTKTokenizer":
+            self._nltk_tokenizer = getattr(nltk.tokenize, nltk_tokenizer_name)()
+            self._algorithm = getattr(module, "NLTKTokenizer")(self._nltk_tokenizer)
+        else:
+            self._algorithm = getattr(module, algorithm_name)()
 
     def invoke(self, *args):
         if len(args) != self._module_names[self._module_name]:
@@ -49,5 +64,8 @@ class AbydosWrapper(object):
         return self._algorithm.stem(*args)
 
     def tokenizer(self, *args):
-        return self._algorithm.__class__().tokenize(*args)
+        if self._algorithm.__class__.__name__ == "NLTKTokenizer":
+            return self._algorithm.__class__(self._nltk_tokenizer).tokenize(*args)
+        else:
+            return self._algorithm.__class__().tokenize(*args)
 
