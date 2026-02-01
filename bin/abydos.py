@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding=utf-8
 #
-# Copyright (C) 2026 Trevor Scroggins
+# Copyright (c) 2026 Trevor Scroggins
 
 from exec_anaconda import exec_anaconda_or_die
 
