@@ -2,7 +2,7 @@
 
 Copyright (c) 2026 Trevor Scroggins\
 Abydos Copyright (c) 2014-2020 Christopher C. Little\
-PyLZSS Copyright (c) 2013 Plastic Logic Limited
+PyLZSS Copyright (c) 2013 Plastic Logic Limited\
 SyllabiPy Copyright (c) 2016 Alex Estes and Christopher Hench\
 Natural Language Toolkit (NLTK) Copyright (c) 2001-2025 NLTK Project\
 Punkt by Tibor Kiss and Jan Strunk\
