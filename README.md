@@ -22,7 +22,7 @@ Limited support for `abydos.tokenizer.NLTKTokenizer` NLTK tokenizers is availabl
 
 ## Requirements
 
-Community App for Abydos requires a non-EOL version of Splunk Enterprise and Python for Scientific Computing:
+Community App for Abydos requires Splunk Enterprise 9.3 or later and Python for Scientific Computing:
 
 - [Python for Scientific Computing (for Linux 64-bit)](https://splunkbase.splunk.com/app/2882)
 - [Python for Scientific Computing (for Mac Apple Silicon)](https://splunkbase.splunk.com/app/6785)
