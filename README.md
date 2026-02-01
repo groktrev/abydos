@@ -16,7 +16,7 @@ The `abydos` streaming search command provides access to the `abydos.distance`, 
 
 See the Abydos [documentation](https://abydos.readthedocs.io/) for available algorithms.
 
-Limited support for `abydos.tokenizer.NLTKTokenizer` NLTK tokenizers is available.
+Limited support for `abydos.tokenizer.NLTKTokenizer` NLTK tokenizers is available. See the nltk.tokenize [documentation](https://www.nltk.org/api/nltk.tokenize.html) for available tokenizers.
 
 `abydos.distance.NCDlzss`, and `abydos.distance.NCDpaq9a` are not implemented.
 
