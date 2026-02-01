@@ -1,8 +1,8 @@
 # Community App for Abydos
-Copyright (C) 2026 Trevor Scroggins\
-Abydos Copyright (C) 2014-2020 Christopher C. Little\
-Splunk Enterprise SDK for Python Copyright (C) 2011-2024 Splunk Inc.\
-Python for Scientific Computing Copyright (C) 2015-2019 Splunk Inc.
+Copyright (c) 2026 Trevor Scroggins\
+Abydos Copyright (c) 2014-2020 Christopher C. Little\
+Splunk Enterprise SDK for Python Copyright (c) 2011-2024 Splunk Inc.\
+Python for Scientific Computing Copyright (c) 2015-2019 Splunk Inc.
 ## Introduction
 Community App for Abydos is a Splunk wrapper for the [Abydos](https://github.com/chrislit/abydos) library.
 
