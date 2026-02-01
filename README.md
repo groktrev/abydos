@@ -18,7 +18,7 @@ See the Abydos [documentation](https://abydos.readthedocs.io/) for available alg
 
 Limited support for `abydos.tokenizer.NLTKTokenizer` NLTK tokenizers is available. See the nltk.tokenize [documentation](https://www.nltk.org/api/nltk.tokenize.html) for available tokenizers.
 
-`abydos.distance.NCDlzss`, and `abydos.distance.NCDpaq9a` are not implemented.
+`abydos.distance.NCDpaq9a` is not implemented.
 
 ## Requirements
 
