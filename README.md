@@ -21,6 +21,8 @@ Limited support for `abydos.tokenizer.NLTKTokenizer` NLTK tokenizers is availabl
 
 `abydos.distance.NCDpaq9a` is not implemented.
 
+Looking for a generalized NLTK app for Splunk? See [NLP Text Analytics](https://splunkbase.splunk.com/app/4066) by Nathan Worsham.
+
 ## Requirements
 
 Community App for Abydos requires Splunk Enterprise 9.3 or later and Python for Scientific Computing:
