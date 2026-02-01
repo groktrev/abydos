@@ -1,6 +1,7 @@
 # Community App for Abydos
 Copyright (c) 2026 Trevor Scroggins\
 Abydos Copyright (c) 2014-2020 Christopher C. Little\
+SyllabiPy Copyright (c) 2016 Alex Estes and Christopher Hench\
 Splunk Enterprise SDK for Python Copyright (c) 2011-2024 Splunk Inc.\
 Python for Scientific Computing Copyright (c) 2015-2019 Splunk Inc.
 ## Introduction
@@ -8,7 +9,7 @@ Community App for Abydos is a Splunk wrapper for the [Abydos](https://github.com
 
 The `abydos` streaming search command provides access to the `abydos.distance`, `abydos.fingerprint`, `abydos.phonetic`, `abydos.stemmer`, and `abydos.tokenizer` modules using default class parameters and the `dist_abs()`, `fingerprint()`, `enocde_alpha()` or `encode()`, `stem()`, and `tokenize()` functions, respectively.
 
-See the Abydos [documentation](https://abydos.readthedocs.io/) for available algorithms. Algorithms requiring SyllabiPy, NLTK, PyLZSS, or paq are not implemented.
+See the Abydos [documentation](https://abydos.readthedocs.io/) for available algorithms. Algorithms requiring NLTK, PyLZSS, or paq are not implemented.
 ## Requirements
 Community App for Abydos requires a non-EOL version of Splunk Enterprise and Python for Scientific Computing:
 
