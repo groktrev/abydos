@@ -65,7 +65,7 @@ class AbydosWrapper(object):
 
     def tokenizer(self, *args):
         if self._algorithm.__class__.__name__ == "NLTKTokenizer":
-            return self._algorithm.__class__(self._nltk_tokenizer).tokenize(*args)
+            return self._algorithm.__class__(self._nltk_tokenizer).tokenize(*args).get_list()
         else:
-            return self._algorithm.__class__().tokenize(*args)
+            return self._algorithm.__class__().tokenize(*args).get_list()
 
