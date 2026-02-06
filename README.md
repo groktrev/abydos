@@ -13,7 +13,7 @@ Python for Scientific Computing Copyright (c) 2015-2019 Splunk Inc.
 
 Community App for Abydos is a Splunk wrapper for the [Abydos](https://github.com/chrislit/abydos) library.
 
-The `abydos` streaming search command provides access to the `abydos.distance`, `abydos.fingerprint`, `abydos.phonetic`, `abydos.stemmer`, and `abydos.tokenizer` modules using default class parameters and the `dist_abs()`, `fingerprint()`, `enocde_alpha()` or `encode()`, `stem()`, and `tokenize()` functions, respectively.
+The `abydos` streaming search command provides access to the `abydos.distance`, `abydos.fingerprint`, `abydos.phonetic`, `abydos.stemmer`, and `abydos.tokenizer` modules using default class parameters and the `dist_abs()`, `fingerprint()`, `enocde_alpha()`, `stem()`, and `tokenize()` functions, respectively.
 
 See the Abydos [documentation](https://abydos.readthedocs.io/) for available algorithms.
 
